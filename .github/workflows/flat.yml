@@ -6,7 +6,7 @@ on:
       - main
   workflow_dispatch:
   schedule:
-    - cron: '0 19 * * *' # Every day at 19:00 (after market close)
+    - cron: '0 9 * * *' # Every day at 19:00 (after market close)
     # Timing syntax described here: https://crontab.cronhub.io
 
 jobs:
