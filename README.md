@@ -16,3 +16,5 @@ Buuuuuut that seems not to be mentioned anywhere except buried in SO. Anywhere, 
 
 
 Now we have a new problem - overwriting the existing file? Does the file need to be renamed, or just trigger a post-processing step?
+
+Also compare to [Connor's example repo](https://github.com/connorrothschild/flat-demo-r-processing) - should I be storing the post processing files in the workflows folder?
