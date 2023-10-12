@@ -18,5 +18,5 @@ asx_trades$date <-as.Date(Sys.Date())
 
 
 # Output data
-readr::write_csv(clean_data, paste0("asx_trades_", Sys.Date(),"./output.csv")) # Not sure if this will work
+readr::write_csv(asx_trades, paste0("asx_trades_", Sys.Date(),"./output.csv")) # Not sure if this will work
 #readr::write_csv(clean_data, "./output.csv")
