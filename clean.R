@@ -5,7 +5,7 @@ library(readxl)
 #library(lubridate)
 
 # Read in data, with the same name that we specified in `flat.yml`
-asx_trades <- readxl::read_excel("./asx_trades.xls")
+asx_trades <- readxl::read_xls("asx_trades.xls")
 
 # Add column names
 colnames(asx_trades) <- c("time_AEDT", "code", "volume", "price_$_MWh")
@@ -18,5 +18,5 @@ asx_trades$date <-as.Date(Sys.Date())
 
 
 # Output data
-write.csv(asx_trades, file = paste0("./asx_trades_", Sys.Date(),"_output.csv")) # Not sure if this will work
+write.csv(asx_trades, file = paste0("asx_trades_", Sys.Date(),"_output.csv")) # Not sure if this will work
 #readr::write_csv(clean_data, "./output.csv")
