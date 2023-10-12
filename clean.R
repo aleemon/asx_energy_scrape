@@ -23,6 +23,6 @@ write.csv(new_trades, file = paste0("./daily_files/asx_trades_", Sys.Date(),"_ou
 
 perpetual_trades <- read.csv("./perpetual_file/perpetual_trades.csv")
 
-#perpetual_trades <- rbind(pertetual_trades, new_trades)
+perpetual_trades <- rbind(pertetual_trades, new_trades)
 
-#write.csv(perpetual_trades, file = "./perpetual_file/perpetual_trades.csv")
+write.csv(perpetual_trades, file = "./perpetual_file/perpetual_trades.csv")
