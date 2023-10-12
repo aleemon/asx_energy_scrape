@@ -30,4 +30,4 @@ jobs:
         with:
           http_url: https://www.asxenergy.com.au/trades/trades-20230110.xls # THE URL YOU WISH TO FETCH GOES HERE
           downloaded_filename: asx_trades.xls # The http_url gets saved and renamed in our repository. Example: data.json, data.csv, image.png
-         # postprocess: ./postprocess.ts # Script to run upon download completion
+          postprocess: ./postprocess.ts # Script to run upon download completion
