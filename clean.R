@@ -15,11 +15,11 @@ write.csv(new_trades, file = paste0("asx_trades_", Sys.Date(),"_output.csv")) # 
 write.csv(new_trades, file = paste0("./daily_files/asx_trades_", Sys.Date(),"_output.csv")) # Not sure if this will work
 
 ## Temporary trick to overwrite the data and force datatype
-perpetual_trades <- new_trades
+#perpetual_trades <- new_trades
 
 
-#perpetual_trades <- read.csv("./perpetual_file/perpetual_trades.csv")
+perpetual_trades <- read.csv("./perpetual_file/perpetual_trades.csv")
 
-#perpetual_trades <- rbind(perpetual_trades, new_trades)
+perpetual_trades <- rbind(perpetual_trades, new_trades)
 
 write.csv(perpetual_trades, file = "./perpetual_file/perpetual_trades.csv")
